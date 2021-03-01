@@ -1,2 +1,2 @@
-https://github.com/lordeiro-dias/primeirositeIW1C.git
+https://lordeiro-dias.github.io/primeirositeIW1C/.
 teste de primeiro site
