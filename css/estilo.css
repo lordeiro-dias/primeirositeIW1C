@@ -1,198 +1,336 @@
-    body{
-        background-image: url(../img/back.png);
-        background-repeat: round;
-        min-height: 100%;
-		padding: 0;
-		margin: 0;
-        background-attachment: fixed;
-        box-sizing: border-box;
-        background-size: cover;
-    }
+body{
+    background-image: url(../img/back.png);
+    background-repeat: round;
+    min-height: 100%;
+    padding: 0;
+    margin: 0;
+    background-attachment: fixed;
+    box-sizing: border-box;
+    background-size: cover;
+}
 
-    h1,h2 {
-        color:rgb(255, 255, 255);
-        text-align: center;
-        font-size: 1.5cm;
-        font-family: fantasy;
+h1,h2 {
+    color:rgb(255, 255, 255);
+    text-align: center;
+    font-size: 1.5cm;
+    font-family: fantasy;
 
-    }
+}
+h3 {
+    color:rgb(255, 255, 255);
+    text-align: center;
+    font-size: 2.0em;
+    font-family: fantasy;
+    text-decoration: underline;
+}
 
-    p{
-        color:rgb(255, 255, 255);
-        font-size: 200%;
-        -webkit-margin-before: 1em;
-        -webkit-margin-after: 1em;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    
-    }
+.titulo{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 1.0cm;
+    font-family: fantasy;
+}
 
+p{
+    color:rgb(255, 255, 255);
+    font-size: 200%;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
-    .dotatexto{
-        -webkit-margin-before: 1em;
+}
 
-    }
+p2{
+    color:rgb(255, 255, 255);
+    font-size: 150%;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
-    figure{
-        width: 100%;
-        text-align: center; 
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    }
+}
 
-    figcaption{
-        font-size: 150%;
-        color:white;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        text-align: center;
-        -webkit-margin-after: 1em; 
-    }
+.dotatexto{
+    -webkit-margin-before: 1em;
 
-    * {
-        box-sizing: border-box;
-      }
-      
-      .column {
-        float: left;
-        width: 33.33%;
-        padding: 5px;
-      }
-      
-      .row::after {
-        content: "";
-        clear: both;
-        display: table;
-      }
+}
 
-    
-    html{
-        scroll-behavior: smooth;
+figure{
+    width: 100%;
+    text-align: center; 
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 
-    }
+figcaption{
+    font-size: 150%;
+    color:white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    -webkit-margin-after: 1em; 
+}
 
-    .imggeral{
-        float: right;
-        width: 25%;
-        margin-left: 10px;
-    }
+* {
+    box-sizing: border-box;
+  }
+  
 
-    header,footer{
-        background-color: rgb(18, 18, 19);
-        padding: 1%;
+html{
+    scroll-behavior: smooth;
+
+}
+
+.imggeral{
+    float: right;
+    width: 25%;
+    margin-left: 10px;
+}
+
+header,footer{
+    background-color: rgb(18, 18, 19);
+    padding: 1%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: bolder;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+footer{
+    color: white;
+
+}
+
+.fixo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+}
+
+    .container{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
         position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        font-size: 1.5em;
-        font-weight: bolder;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#sobre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 2.0em;
+
+}
+
+#sobre .sobre {
+    text-align: center;
+
+}
+
+#galeria{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+}
+
+#galeria .galeria{
+    text-align: center;
+    padding: 15px;
+
+}
+
+    .imggaleria{
+        width: 90%;
+
+
     }
 
-    footer{
-        color: white;
-
+    .imgsobre{
+        width: 20%;
+        height: 20%;
+        transition: width 2s, height 2s, transform 2s;
     }
 
-    .fixo{
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 1030;
+    .imgsobre:hover{
+
+        transform: rotate(360deg);
     }
 
-        .container{
-            width: 80%;
-            margin-left: auto;
-            margin-right: auto;
-            position: relative;
-    }
-
-        .ajustes{
-            line-height: 1;
-            text-align: center;
-            
-        }
-
-        .menu-opcoes{
-            text-align: center;
-
-        }
-
-        a:link{
-			text-decoration: none;
-            color:rgb(255, 255, 255);
-            transition: 0.5s;
-
-		}
-
-        a:visited{
-            color: rgb(255, 255, 255);
-        }
-
-        a:hover{
-            color: rgb(194, 35, 35);
-            transition: 0.5s;
-        }
-
-        .imglogo{
-            width: 30%;
-
-        }
+    .ajustes{
+        line-height: 1;
+        text-align: center;
         
-
-@media screen and (max-width: 599px){
-    .container{
-        margin-top: 70%;
-    }
-
-    .paada{
-        width: 80%;
-    }
-
-    .imggeral{
-        width: 50%;
-    }
-
-    .imglogo{
-        width: 80%;
-
-    }
-}
-
-@media screen and (min-width: 600px){
-    .container{
-        margin-top: 25%;
-    }
-}
-
-@media only screen and (min-width: 768px){
-    .container{
-        margin-top: 15%;
-    }
-
-    header{
-        flex-direction: row;
-        position: relative;
-
     }
 
     .menu-opcoes{
-        position: absolute;
-        right: 5%;
-        top: 45%;
+        text-align: center;
 
     }
 
-    .menu-opcoes ul li{
-        display:inline;
-        margin-left: 10px;
+    a:link{
+        text-decoration: none;
+        color:rgb(255, 255, 255);
+        transition: 0.5s;
+
     }
 
-    p{
-        text-align: justify;
+    a:visited{
+        color: rgb(255, 255, 255);
+    }
+
+    a:hover{
+        color: rgb(194, 35, 35);
+        transition: 0.5s;
     }
 
     .imglogo{
-        margin-right: 60%;
+        width: 30%;
+
+    }
+    
+
+
+
+    .fundo{
+
+        background:rgb(102, 101, 101);
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 3%;
+        font-size: 1.2em;
+        border: 1px solid rgb(194, 35, 35);
     }
 
-}
+    .distancia{
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+    label{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        
+    }
+        
+    input[type=text], select, textarea {
+        width: 100%;
+        padding: 12px 20px;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    }
+
+    input[type=submit] {
+        width: 100%;
+        background-color: rgb(194, 35, 35);
+        color: black;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 1.2em;
+    }
+
+    fieldset{
+        width: 100%;
+        border: 2px solid #ccc;
+        padding: 2%;
+    }
+
+    legend{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 1.2em;
+
+    }
+
+    @media screen and (max-width: 599px){
+        .container{
+            margin-top: 70%;
+        }
+        
+        .paada{
+            width: 80%;
+        }
+        
+        .imggeral{
+            width: 50%;
+        }
+        
+        .imglogo{
+            width: 80%;
+        
+        }
+        }
+        
+        @media screen and (min-width: 600px){
+        .container{
+            margin-top: 25%;
+        }
+        }
+        
+        @media only screen and (min-width: 768px){
+        .container{
+            margin-top: 15%;
+        }
+        
+        header{
+            flex-direction: row;
+            position: relative;
+        
+        }
+        
+        .menu-opcoes{
+            position: absolute;
+            right: 5%;
+            top: 45%;
+        
+        }
+        
+        .menu-opcoes ul li{
+            display:inline;
+            margin-left: 10px;
+        }
+        
+        p{
+            text-align: justify;
+        }
+        
+        .imglogo{
+            margin-right: 60%;
+        }
+
+        #sobre, #galeria {
+            flex-direction: row;
+            flex-wrap: wrap;
+
+        }
+        
+        #sobre h1, h3, p, #galeria {
+            width: 100%;
+            text-align: center;
+
+        }
+
+        #sobre .sobre {
+            width: 25%;
+            text-align: center;
+        }
+
+        #galeria .galeria{
+            width: 33.3%;
+            text-align: center;
+        }
+
+    }
